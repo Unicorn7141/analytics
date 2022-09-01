@@ -1,7 +1,7 @@
 import streamlit as st
 from currency_converter import CurrencyConverter
 
-st.set_page_config(page_title="Currency Converter", page_icon="💱")
+st.set_page_config(page_title="Unicorn's \u2022 Currency Converter", page_icon="💱")
 
 st.markdown("""
 In this currency converter you'll be asked to enter the amount of money you'd like to convert, the coin shortcut you'd
