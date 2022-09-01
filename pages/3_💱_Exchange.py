@@ -21,13 +21,14 @@ converted = 0
 form = st.form("Money Converter")
 form.title("Money Converter")
 amt = form.number_input("Amount", value=0.00)
-from_coin = form.text_input("From").upper()
+from_coin = form.text_input("From", value="").upper()
 to_coin = form.text_input("To", value="USD").upper()
-result = form.text_input("Result", value=f"{c.convert(amt, from_coin, to_coin):.3f} {to_coin}", disabled=True)
 submit_button = form.form_submit_button()
+
 if submit_button:
     try:
         converted = c.convert(amt, from_coin, to_coin)
-
+        result = form.text_input("Result", value=f"{converted} {to_coin}",
+                                 disabled=True)
     except Exception as e:
         form.error(e)
