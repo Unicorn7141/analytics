@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Unicorn's Site \u2022 Forms", page_icon="📜")
+st.set_page_config(page_title="Unicorn's \u2022 Forms", page_icon="📜")
 st.markdown("""
 # Available Forms
 - [Pets Form](https://forms.gle/pkCsruRwu4LAN8nP8)
