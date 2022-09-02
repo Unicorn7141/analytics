@@ -41,6 +41,7 @@ with st.expander("Explanation", False):
     """)
 
     pets_form_button = st.button("Fill the form")
+    st.write("Or you can [click here](https://forms.gle/sN1eude7WrEtRjg16)")
 
 if pets_form_button:
     url = 'https://forms.gle/sN1eude7WrEtRjg16'
