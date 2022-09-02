@@ -46,6 +46,8 @@ if pets_form_button:
     url = 'https://forms.gle/sN1eude7WrEtRjg16'
     webbrowser.open_new_tab(url)
 
+for i in range(10):
+    st.text('')
 
 st.title("Closed Forms")
 hide_streamlit_style = """
